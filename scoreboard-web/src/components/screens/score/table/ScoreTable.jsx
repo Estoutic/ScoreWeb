@@ -1,15 +1,23 @@
-const ScoreTable = ({ data }) => {
-  return (
-    <>
-      <h2>First Category</h2>
-      {data.map((item) => (
-        <div key={item.id}>
-          <p>{item.name}</p>
-          <p>{item.score}</p>
-        </div>
-      ))}
-    </>
-  );
-};
+import React from "react";
+import useCategories from "../../../../api.resources.category/UseCategories";
+import TableElement from "./TableElement";
 
-export default ScoreTable;
+export default function ScoreTable({ categoryId }) {
+  const { data, isLoading, error } = useCategories({categoryId});
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error || !data) {
+    return <div>{error ? `Error: ${error.message}` : "No data available"}</div>;
+  }
+  const { categoryName, workerResults } = data;
+
+  return (
+    <TableElement
+      categoryName={categoryName}
+      workerResults={workerResults}
+    ></TableElement>
+  );
+}
