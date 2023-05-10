@@ -25,9 +25,9 @@ const GlobalScore = () => {
     <><TopBar/>
       <Title>Global Score </Title>
       <Container>
-        <ScoreTable categoryId={"966c95e5-3a98-4b92-8216-454f4c0024e3"} />
-        <ScoreTable categoryId={"c05ab3f5-23a3-4afe-a19d-0428525b7106"} />
-        <ScoreTable categoryId={"c64c4bc0-952f-4ad3-b032-91445f8e024b"} />
+        <ScoreTable categoryId={"44a6ced9-00bc-4a58-a57c-ce82adafab62"} />
+        <ScoreTable categoryId={"93826924-34f2-479f-a1c7-193c6c5770f7"} />
+        <ScoreTable categoryId={"674bbf60-65e2-497a-baf6-70d1bfcc1624"} />
       </Container>
     <Sticker/>
     </>

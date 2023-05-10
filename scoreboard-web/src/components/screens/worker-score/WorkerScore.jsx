@@ -17,7 +17,7 @@ const WorkerScore = () => {
       <TopBar />
       <Container>
         <DashBoard
-          workerId={"01c5062a-dda8-4fb6-90c9-9976d751d661"}
+          workerId={"3bfc813c-e19c-486e-a2b3-1aff6d29bea4"}
         ></DashBoard>
       </Container>
     <Sticker/>
