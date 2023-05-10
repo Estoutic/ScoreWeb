@@ -1,9 +1,9 @@
 import React from "react";
-import useCategories from "../../../../api.resources.category/UseCategories";
-import TableElement from "./TableElement";
+import useCategories from "../../../../../api.resources.category/UseCategories";
+import TableElement from "./components/TableElement";
 
 export default function ScoreTable({ categoryId }) {
-  const { data, isLoading, error } = useCategories({categoryId});
+  const { data, isLoading, error } = useCategories({ categoryId });
 
   if (isLoading) {
     return <div>Loading...</div>;

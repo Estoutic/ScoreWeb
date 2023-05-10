@@ -1,5 +1,5 @@
-import categoryKeys from "./keys";
-import { getCategoryInfo } from "../components/screens/score/services/api";
+import categoryKeys from "./keys/keys";
+import { getCategoryInfo } from "./api";
 import { useQuery } from "react-query";
 
 const useCategories = ({categoryId}) => {
