@@ -1,5 +1,5 @@
 import React from "react";
-import useCategories from "../../../../api.resources.category/UseCategories";
+import useCategories from "../../../../api/UseCategories";
 import TableElement from "./TableElement";
 
 export default function ScoreTable({ categoryId }) {

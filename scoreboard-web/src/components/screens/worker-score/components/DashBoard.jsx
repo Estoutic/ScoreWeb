@@ -1,5 +1,5 @@
 import React from "react";
-import useWorkerCategories from "../../../../api.resources.category/UseWokerCategories";
+import useWorkerCategories from "../../../../api/UseWokerCategories";
 import styled from "styled-components";
 import CategoriesList from "./CategoriesList";
 

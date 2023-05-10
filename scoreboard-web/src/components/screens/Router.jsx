@@ -3,6 +3,7 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { Helmet } from 'react-helmet';
 import GlobalScore from "./globalScore/globalScore";
 import WorkerScore from "./worker-score/WorkerScore";
+import Header from "../global-somponents/Header";
 
 
 const queryClient = new QueryClient();
@@ -19,7 +20,7 @@ const Router = () => {
       </Helmet>
           <QueryClientProvider client={queryClient}>
     <Routes>
-
+        
         <Route element = {<GlobalScore/>} path = '/'></Route>
         <Route element = {<WorkerScore/>} path = '/worker'></Route>
         <Route path = '*' element = {<div>Not Found</div>}></Route>

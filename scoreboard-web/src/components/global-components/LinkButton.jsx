@@ -1,19 +1,12 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const Container = styled.div`
-  position: absolute;
-  margin-left: 45% ;
-  margin-top: 20px ;
-`;
-
 const StyledLink = styled(Link)`
   text-decoration: none;
   background-color: #3bb9dd;
   border: 2px solid;
   border-radius: 4px;
-  border-color: #5f5d59 ;
-  position: absolute;
+  border-color: #5f5d59;
   color: #444141;
   cursor: pointer;
   font-size: 16px;
@@ -26,10 +19,6 @@ const StyledLink = styled(Link)`
 `;
 
 const LinkButton = ({ way, text }) => {
-  return (
-    <Container>
-      <StyledLink to={`${way}`}>{text}</StyledLink>
-    </Container>
-  );
+  return <StyledLink to={`${way}`}>{text}</StyledLink>;
 };
 export default LinkButton;
