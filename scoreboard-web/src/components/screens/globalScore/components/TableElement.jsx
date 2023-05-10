@@ -12,6 +12,8 @@ const CategoryHeader = styled.h3`
   color: white;
   font-size: 24px;
   margin-bottom: 10px;
+  text-align:  center;
+  
 `;
 
 const Table = styled.table`

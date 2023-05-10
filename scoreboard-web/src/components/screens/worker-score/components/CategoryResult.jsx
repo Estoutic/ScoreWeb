@@ -9,6 +9,8 @@ const CategoryContainer = styled.div`
 `;
 
 const CategoryHeader = styled.h3`
+  text-align:  center;
+
   color: white;
   font-size: 24px;
   margin-bottom: 10px;
@@ -34,6 +36,7 @@ const TableRow = styled.tr`
 
 const TableHeader = styled.th`
   background-color: #3bb9dd;
+  text-align:  center;
   color: white;
   padding: 10px;
   text-align: center;
