@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Sticker from "../../global-components/Sticker";
 import TopBar from "../../global-components/TopBar";
 import ScoreTable from './components/ScoreTable';
 
@@ -28,7 +29,7 @@ const GlobalScore = () => {
         <ScoreTable categoryId={"c05ab3f5-23a3-4afe-a19d-0428525b7106"} />
         <ScoreTable categoryId={"c64c4bc0-952f-4ad3-b032-91445f8e024b"} />
       </Container>
-
+    <Sticker/>
     </>
   );
 };

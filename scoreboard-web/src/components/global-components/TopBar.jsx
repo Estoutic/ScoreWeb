@@ -7,7 +7,7 @@ const TopBarContainer = styled.div`
   background-color: #3bb9dd;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   position: relative;
 
 `;
@@ -15,8 +15,9 @@ const TopBarContainer = styled.div`
 const TopBar = () => {
   return (
     <TopBarContainer>
-      <LinkButton way="/worker" text={"Worker"} />
-      <LinkButton way="/" text={"Home"} />
+      <LinkButton way="/worker" text={"Personal"} />
+      <LinkButton way="/" text={"Global"} />
+      <LinkButton way="https://www.youtube.com/watch?v=dQw4w9WgXcQ" text={"Dont Click"} />
     </TopBarContainer>
   );
 };

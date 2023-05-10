@@ -3,7 +3,6 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { Helmet } from 'react-helmet';
 import GlobalScore from "./globalScore/globalScore";
 import WorkerScore from "./worker-score/WorkerScore";
-import Header from "../global-somponents/Header";
 
 
 const queryClient = new QueryClient();
