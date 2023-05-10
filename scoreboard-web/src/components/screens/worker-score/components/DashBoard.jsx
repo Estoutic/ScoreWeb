@@ -1,7 +1,7 @@
 import React from "react";
-import useWorkerCategories from "../../../../../api.resources.category/UseWokerCategories";
+import useWorkerCategories from "../../../../api.resources.category/UseWokerCategories";
 import styled from "styled-components";
-import CategoriesList from "./components/CategoriesList";
+import CategoriesList from "./CategoriesList";
 
 const Title = styled.h1`
   font-size: 32px;
